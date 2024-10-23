@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex7</title>
+</head>
+<body>
+    <form action="RSF1ex7.html" method="post">
+        <fieldset>
+            <legend>Personal info</legend>
+            <label for="name">Name</label>
+            <input type="name" name="name" pattern="”[A-Z][a-z]+\s[A-Z][a-z]+" required>
+            <br>
+            Member<input type="radio" name="member" id="member">
+            Non-member<input type="radio" name="nonmember" id="nonmember">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+    </form>
+    <form action="RSF1ex7.html" method="post">
+        <fieldset>
+            <legend>
+                Reservation info
+            </legend>
+            <label for="facility">Facility</label>
+            <select name="facility" id="facility">
+                <option value="badminton">badminton</option>
+                <option value="squash">squash</option>
+                <option value="racquetball">racquetball</option>
+            </select>
+            <br>
+            Select a reservation date and time:
+            <input type="datetime-local" name="timeanddate">
+            <br>
+            <input type="checkbox" required>I agree to the club’s reservation policy
+        </fieldset>
+        <br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+
+</body>
+</html>

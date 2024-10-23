@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex6</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="https://www.webucator.com/materials/htm101/" method="post">
+        <label for="name" id="username">User name:</label>
+        <input type="name" name="name" required>
+        <br>
+        <label for="password" id="password">Password:</label>
+        <input type="password" name="password" required>
+        <br>
+        <input type="hidden" name="emailMe" id="emailMe" value="miguyyalts@gmail.com">
+        <label for="gender" id="gender">Gender:</label>
+        <input type="radio" name="genderm" value="make" required>Male
+        <input type="radio" name="genderf" value="f" required>Female
+        <br>
+        <label for="terms" id="terms">Click to accept our terms:</label>
+        <input type="checkbox" name="terms" required>
+        <br>
+        <label for="aboutus">Where did you hear about</label>
+        <select name="referral" id="referral">
+            <option value="0">–Please choose–</option>
+            <option value="wom">Word of Mouth</option>
+            <label for="Search Engine">
+                <option value="google">Google</option>
+                <option value="Yahoo">Yahoo</option>
+                <option value="MSN">MSN</option>
+            </label>
+        </select>
+        <br>
+        <label for="comments">Comments:</label>
+        <br>
+        <textarea name="comments" id="comments" cols="40" rows="3"></textarea>
+        <br>
+        <input type="submit" name="submit" id="submit" value="Register">
+        <input type="reset" name="reset" id="reset">
+    </form>
+
+</body>
+</html>
