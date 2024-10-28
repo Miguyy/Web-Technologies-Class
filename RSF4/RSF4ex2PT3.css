@@ -1,0 +1,8 @@
+p {
+    border-top-color: red;      
+    border-top-style: dotted;   
+    border-top-width: 4px;      
+    border-top: 4px dotted red;
+  }
+  
+  

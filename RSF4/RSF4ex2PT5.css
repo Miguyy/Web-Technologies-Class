@@ -1,0 +1,17 @@
+a {
+    background-color: lightblue;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    background-color: lightblue;
+  }
+  
+  a:hover {
+    background-color: yellow;
+  }
+  
+  a:active {
+    background-color: red;
+  }
+  

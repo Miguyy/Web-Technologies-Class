@@ -1,0 +1,40 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.text-paragraphs p {
+    text-align: justify;
+}
+
+.bg-black {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.text-paragraphs p:nth-child(odd) {
+    color: #ff0000;
+}
+
+.text-paragraphs p:nth-child(even) {
+    color: #0000ff;
+}
+
+table thead {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+table td {
+    background-color: #5370C3;
+    color: #ffffff;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
