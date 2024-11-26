@@ -1,0 +1,29 @@
+body {
+    background-color: #FFFFFF;
+}
+
+.section {
+    padding: 80px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 60px;
+    align-items: center; 
+    justify-items: center;
+}
+
+
+.grid img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px;
+    }
+}

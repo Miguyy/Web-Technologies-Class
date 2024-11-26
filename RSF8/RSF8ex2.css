@@ -1,0 +1,41 @@
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+}
+
+.section {
+    padding: 80px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 30px;
+}
+
+.card img {
+    width: 295px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-name {
+    margin: 16px 0 6px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.product-price {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.card:hover .product-price {
+    color: #3563E9;
+}
