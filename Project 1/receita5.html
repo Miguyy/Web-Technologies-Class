@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Definindo a escala para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição do site para motores de busca -->
+    <meta name="description" content="Receitas de Culinária">
+    <!-- Palavras-chave -->
+    <meta name="keywords" content="Receitas">
+    <!-- Autor do site -->
+    <meta name="author" content="Miguel Machado">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="Project1.css">
+    <!-- Título da página -->
+    <title>Receitas de Culinária</title>
+</head>
+<body>
+    <!-- Tela de carregamento -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-text">A carregar...</div>
+            <div class="spinner"></div> <!-- Animação de carregamento -->
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1 class="header-title">Receitas de Culinária</h1>
+    </header>
+
+    <!-- Navegação com links -->
+    <section>
+        <nav class="navegar">
+            <ul class="main-list">
+                <li class="item-list">
+                    <a href="index.html" class="home_link">Home</a>
+                </li>
+                <li class="item-list">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.98985 7.01056L3.15002 12.8491L3.93121 13.65L10.5918 7.01056L3.93121 0.350024L3.15002 1.14966L8.98985 7.01056Z" fill="black"></path>
+                    </svg>
+                    <span>Burritos</span>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Secção de vídeo -->
+    <section class="video-section">
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/6VErUjHZn_k?si=FXySrDUX886lYYky"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="top-video">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Detalhes da receita -->
+    <section class="recipe-detail_section">
+        <div class="recipe-detail_instructions">
+            <div class="recipe-ingredients">
+                <h3 class="recipe-ingredients_title">Ingredientes</h3>
+                <ul class="recipe-ingredients_list">
+                    <li class="recipe-ingredients_items">Açúcar - 75 g </li>
+                    <li class="recipe-ingredients_items">Açúcar baunilhado - 1 c. de chá</li>
+                    <li class="recipe-ingredients_items">Amido de milho - 20 g</li>
+                    <li class="recipe-ingredients_items">Gema de ovo L - 4 unid.</li>
+                    <li class="recipe-ingredients_items">Leite meio-gordo - 400 g</li>
+                    <li class="recipe-ingredients_items">Casca de limão - 1 unid.</li>
+                    <li class="recipe-ingredients_items">Massa folhada - 1 emb.</li>
+                    <li class="recipe-ingredients_items">Açúcar em pó - 1 c. de sopa</li>
+                    <li class="recipe-ingredients_items">Canela em pó - 1 c. de sopa</li>
+                </ul>
+            </div>
+
+            <!-- Passos da receita -->
+            <div class="recipe-steps">
+                <h3 class="recipe-steps_title">Preparação</h3>
+                <ul class="recipe-steps_list">
+                    <!-- Seção para as tortilhas -->
+                    <h3 class="recipe-steps_header">Tortilhas</h3>
+                    <br>
+                    <li class="recipe-steps-items">1. Comece por fazer as tortilhas: misture a farinha, o bicarbonato e o sal numa tigela média e incorpore bem; adicione o óleo vegetal e a água morna e amasse até obter uma massa homogénea.</li>
+                    <li class="recipe-steps-items">2. Divida a massa em bolinhas e estique-as numa superfície enfarinhada.</li>
+                    <li class="recipe-steps-items">3. Coza a massa numa frigideira bem quente e reserve até usar.</li>
+                    <br>
+
+                    <!-- Seção para o recheio -->
+                    <h3 class="recipe-steps_header">Recheio</h3>
+                    <br>
+                    <li class="recipe-steps-items">1. Esmague o abacate e cubra-o com um pouco de sumo de limão, reserve.</li>
+                    <li class="recipe-steps-items">2. Pique a cebola e o tomate em pedaços pequenos e tempere com os coentros picados, o sumo de lima, sal e azeite. Reserve também.</li>
+                    <li class="recipe-steps-items">3. Salteie o feijão com o frango desfiado e o arroz com água do feijão.</li>
+                    <li class="recipe-steps-items">4. Numa taça, combine o recheio de feijão e frango com um pouco do molho de tomate e coentros.</li>
+                    <li class="recipe-steps-items">5. Aqueça uma tortilha na frigideira e estique-a por cima de papel de alumínio.</li>
+                    <li class="recipe-steps-items">6. Guarneça com o abacate esmagado, o recheio de feijão e frango e um pouco de crème fraiche.</li>
+                    <li class="recipe-steps-items">7. Enrole o seu burrito e leve-o consigo!</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; Receitas de Culinária - Projecto 1 de TWEB 2024</p>
+    </footer>
+</body>
+</html>

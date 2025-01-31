@@ -1,0 +1,461 @@
+/* Estilização da tela de carregamento */
+.loading-screen {
+    position: fixed; /* Fixa a tela de carregamento para cobrir toda a área da página */
+    top: 0; /* Alinha ao topo da página */
+    left: 0; /* Alinha à esquerda da página */
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    background-color: #ffffff; /* Cor de fundo branca */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    z-index: 9999; /* Coloca a tela de carregamento acima de outros elementos */
+    animation: fadeIn 1s ease-in, fadeOut 1s ease-out forwards 3s; /* Animações para a entrada e saída */
+}
+
+/* Conteúdo central da animação */
+.loading-content {
+    display: flex; /* Usa flexbox para empilhar elementos verticalmente */
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center; /* Centraliza os elementos */
+}
+
+/* Texto de carregamento */
+.loading-text {
+    font-size: 2em; /* Tamanho da fonte grande */
+    margin-bottom: 20px; /* Espaço inferior */
+}
+
+/* Spinner de carregamento */
+.spinner {
+    width: 50px; /* Largura do spinner */
+    height: 50px; /* Altura do spinner */
+    border: 5px solid #333; /* Borda do spinner */
+    border-top-color: transparent; /* Torna a parte superior transparente */
+    border-radius: 50%; /* Forma circular */
+    animation: spin 1s linear infinite; /* Animação de rotação contínua */
+}
+
+/* Animação de rodar */
+@keyframes spin {
+    to {
+        transform: rotate(360deg); /* Gira 360 graus */
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0; /* Desaparece */
+        visibility: hidden; /* Fica invisível */
+    }
+}
+
+/* Reset básico */
+* {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamentos */
+    box-sizing: border-box; /* Inclui bordas e espaçamentos nas dimensões */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão */
+    background-color: #f0f4f8; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    padding-top: 80px; /* Espaço para o header fixo */
+}
+
+.header {
+    display: flex; /* Flexbox para layout */
+    justify-content: space-between; /* Itens alinhados nas extremidades */
+    align-items: center; /* Centralização vertical */
+    padding: 20px 30px; /* Espaçamento interno */
+    background-color: #f8fafc; /* Cor de fundo suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: fixed; /* Fixa no topo */
+    top: 0; /* Posição superior */
+    left: 0; /* Posição à esquerda */
+    right: 0; /* Posição à direita */
+    z-index: 1000; /* Sobreposição */
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática */
+}
+
+/* Estilo do título */
+.header-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fontes alternativas */
+    font-size: 2.2rem; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+    margin: 0; /* Remove margens */
+    flex-shrink: 0; /* Impede que o título reduza de tamanho */
+}
+
+/* Estilo da barra de pesquisa */
+.search-bar {
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 15px; /* Espaçamento entre os elementos */
+}
+
+/* Estilo do Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50; /* Cor do botão (verde suave) */
+    color: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropbtn i {
+    margin-left: 8px; /* Espaço entre o texto e a seta */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Fundo branco para os links */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #ddd; /* Bordas suaves */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.dropdown-content a {
+    color: #333; /* Texto escuro */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o rato */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #45a049; /* Cor do botão ao passar o rato */
+}
+
+/* Estilo do botão */
+.search-button {
+    padding: 12px 18px; /* Espaçamento interno */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor pointer */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #4caf50; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+/* Efeito de hover do botão */
+.search-button:hover {
+    background-color: #45a049; /* Cor mais escura em hover */
+    transform: scale(1.05); /* Aumenta ligeiramente */
+}
+
+/* Efeito de foco do botão */
+.search-button:focus {
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Destaque */
+.highlights {
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Texto centralizado */
+    background-color: #ffffff; /* Fundo branco */
+}
+
+.highlights h2 {
+    font-size: 2.5em; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaço inferior */
+}
+
+/* Cards de receitas */
+.recipe-cards {
+    display: flex; /* Flexbox para organizar cards em linha */
+    justify-content: center; /* Alinha ao centro */
+    gap: 20px; /* Espaçamento entre cards */
+}
+
+.recipe-card {
+    background-color: #f9f9f9; /* Fundo claro */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: 300px; /* Largura do card */
+    text-align: center; /* Texto centralizado */
+    overflow: hidden; /* Impede conteúdo de sair dos limites */
+    transition: transform 0.2s ease-in-out; /* Transição suave para animação */
+}
+
+/* Efeito de hover nos cards */
+.recipe-card:hover {
+    transform: translateY(-5px); /* Move o card ligeiramente para cima */
+}
+
+.recipe-card img {
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: auto; /* Altura proporcional */
+}
+
+.recipe-card h3 {
+    padding: 15px; /* Espaçamento interno */
+    font-size: 1.3em; /* Tamanho do texto */
+}
+
+/* Seção "Todas as Receitas" */
+.recipe-list {
+    padding: 40px 20px; /* Espaçamento interno */
+}
+
+.recipe-list h2 {
+    font-size: 2.5em; /* Tamanho do título */
+    text-align: center; /* Centralizado */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #333; /* Cor escura */
+}
+
+/* Grid de receitas */
+.recipe-grid {
+    display: grid; /* Layout em grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas automáticas */
+    gap: 20px; /* Espaçamento entre itens */
+}
+
+.recipe-item {
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    overflow: hidden; /* Impede conteúdo de sair */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Alinha itens em coluna */
+    align-items: center; /* Centraliza itens */
+    transition: transform 0.2s ease-in-out; /* Transição de hover */
+}
+
+/* Efeito de hover em itens */
+.recipe-item:hover {
+    transform: translateY(-5px); /* Eleva o item */
+}
+
+.recipe-item img {
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Ajusta imagem sem distorção */
+    border-bottom: 2px solid #116B39; /* Borda inferior */
+}
+
+/* Informações da receita */
+.recipe-info {
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Texto centralizado */
+}
+
+.recipe-info h3 {
+    font-size: 1.4em; /* Tamanho do texto */
+    color: #333; /* Cor escura */
+    margin-bottom: 10px; /* Espaço inferior */
+}
+
+.recipe-info p {
+    font-size: 0.9em; /* Tamanho do texto */
+    color: #555; /* Cor cinza */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+/* Footer */
+.footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 0.9em; /* Tamanho da fonte */
+}
+
+/* Navegação */
+.navegar {
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    padding: 20px 20px; /* Espaçamento interno */
+}
+
+/* Lista de navegação principal */
+.main-list {
+    list-style-type: none; /* Remove marcadores */
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Itens da lista de navegação */
+.item-list {
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo dos links */
+.item-list a {
+    text-decoration: none; /* Remove sublinhado */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Ícones dentro da navegação */
+.item-list svg {
+    vertical-align: middle; /* Alinha o ícone ao texto */
+    margin-right: 5px; /* Espaçamento entre ícone e texto */
+}
+
+/* Detalhes da receita */
+.recipe-detail_section {
+    margin: 20px 20px 50px 20px; /* Margens: topo, laterais, e inferior */
+    display: flex; /* Layout em flex */
+    justify-content: center; /* Centraliza conteúdo */
+}
+
+/* Instruções da receita */
+.recipe-detail_instructions {
+    display: flex; /* Layout flexível */
+    column-gap: 64px; /* Espaçamento entre colunas */
+    flex-direction: row; /* Elementos em linha */
+    align-items: flex-start; /* Alinhamento superior */
+}
+
+/* Ingredientes da receita */
+.recipe-ingredients {
+    max-width: 290px; /* Largura máxima */
+    margin-bottom: 0; /* Remove margem inferior */
+}
+
+.recipe-ingredients_title {
+    margin-bottom: 24px; /* Espaço inferior */
+    font-family: "avenir", Arial, Helvetica, sans-serif; /* Fonte personalizada */
+    font-size: 32px; /* Tamanho do texto */
+    font-weight: 700; /* Texto em negrito */
+    line-height: 38px; /* Altura da linha */
+}
+
+/* Lista de ingredientes */
+.recipe-ingredients_list {
+    margin: 0; /* Remove margens */
+    border: 1px solid #116B39; /* Borda com cor específica */
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove marcadores */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-family: "avenir", Helvetica, Arial, sans-serif; /* Fonte */
+    font-size: 14px; /* Tamanho do texto */
+    font-weight: 400; /* Peso regular */
+    line-height: 20px; /* Altura da linha */
+}
+
+/* Itens da lista de ingredientes */
+.recipe-ingredients_items {
+    padding: 8px 24px 8px 56px; /* Espaçamento interno */
+    background-image: url(//sire-assets-natgeo.fichub.com/assets/24kitchen-v2/css/../images/icons/leaves.svg); /* Ícone de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: 16px center; /* Posição da imagem */
+}
+
+/* Passos da receita */
+.recipe-steps {
+    max-width: 600px; /* Largura máxima */
+    margin-bottom: 56px; /* Margem inferior */
+}
+
+.recipe-steps_title {
+    margin-bottom: 24px; /* Espaço inferior */
+    font-family: "avenir", Helvetica, Arial, sans-serif; /* Fonte */
+    font-size: 32px; /* Tamanho do texto */
+    font-weight: 700; /* Negrito */
+    line-height: 38px; /* Altura da linha */
+}
+
+/* Lista de passos */
+.recipe-steps_list {
+    margin: 0; /* Remove margem */
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove marcadores */
+}
+
+/* Itens da lista de passos */
+.recipe-steps-items {
+    padding: 16px 0; /* Espaçamento vertical */
+    border-top: 1px solid #d9d9d9; /* Borda superior */
+    font-family: "avenir", Helvetica, Arial, sans-serif; /* Fonte */
+    font-size: 14px; /* Tamanho do texto */
+    font-weight: 400; /* Peso regular */
+    line-height: 20px; /* Altura da linha */
+}
+
+/* Container de imagem */
+.image-container {
+    width: 80%; /* Largura proporcional */
+    max-width: 800px; /* Largura máxima */
+    overflow: hidden; /* Esconde conteúdo excedente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
+}
+
+/* Efeito de hover para o container de imagem */
+.image-container:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Seção de imagem */
+.image-section {
+    display: flex; /* Layout em flex */
+    justify-content: center; /* Centraliza conteúdo */
+    margin-top: 20px; /* Espaço superior */
+}
+
+/* Imagem superior */
+.top-image {
+    width: 100%; /* Largura total */
+    height: 450px; /* Altura fixa */
+    object-fit: cover; /* Ajusta imagem sem distorção */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Seção de vídeo */
+.video-section {
+    display: flex; /* Layout em flex */
+    justify-content: center; /* Centraliza conteúdo */
+    margin: 20px 0; /* Espaçamento vertical */
+}
+
+/* Container de vídeo */
+.video-container {
+    width: 80%; /* Largura proporcional */
+    max-width: 800px; /* Largura máxima */
+    overflow: hidden; /* Esconde conteúdo excedente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
+}
+
+/* Efeito de hover para o container de vídeo */
+.video-container:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Vídeo superior */
+.top-video {
+    width: 100%; /* Largura total */
+    height: 450px; /* Altura fixa */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+
+

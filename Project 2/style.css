@@ -1,0 +1,563 @@
+.body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font */
+.do-hyeon-regular {
+    font-family: "Do Hyeon", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header esteja acima de outros elementos */
+}
+.logo {
+    height: 20%;
+    position: fixed;
+    left: 45%;
+    top: 15px;
+}
+
+.navbar {
+    background-color: #000675;
+    padding: 1rem;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    padding-top: 20px;
+}
+.navbar-brand {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-family: "Do Hyeon", serif;
+}
+
+.navbar-brand:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-items {
+    display: flex;
+    background-color: #000D40;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9rem;
+    padding: 1rem;
+}
+.nav-item {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.nav-item:hover {
+    background-color: #000675;
+    border-radius: 5px;
+}
+.nav-item a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar input[type="search"] {
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.result-item {
+    display: none; /* Ocultamos os itens por padrão */
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.result-item.visible {
+    display: block; /* Exibimos quando o item corresponde à busca */
+}
+
+.btn {
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+    
+/* Banner */
+.banner {
+    position: relative; /* Para posicionar elementos dentro do container */
+    width: 100%;
+    height: 450px; /* Altura do banner (ajustável) */
+    background: url('images/banner.png') no-repeat center center;
+    background-size: cover; /* Faz a imagem ocupar toda a área */
+    z-index: -1; /* Coloca o banner atrás dos outros elementos */
+    margin-top: 150px;
+}
+
+.banner .text {
+    position: absolute; /* Para posicionar o texto dentro do banner */
+    top: 50%; /* Centraliza verticalmente */
+    right: 0px; /* Alinha o texto à direita com um espaçamento */
+    transform: translateY(-50%); /* Ajusta para centralização perfeita */
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    text-align: right; /* Alinhamento do texto */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(10, 167, 4, 0.8)); /* Gradiente de transparente para preto */
+    padding: 133px; /* Espaçamento interno do texto */
+}
+
+/* Mapa */
+.map-title-div {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.map-area {
+    display: flex;
+    justify-content: space-between;
+    height: 1159px;
+    position: relative;
+    width: 100%;
+}
+
+.map-info {
+    width: 100%;
+}
+
+.info {
+  color: #000000;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  position: relative;
+  top: 210px;
+  width: 651px;
+  height: 600px;
+  left: 30%;
+}
+.info-title {
+  color: #000000;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 128px;
+  font-weight: 400;
+  position: relative;
+  left: 30%;
+  top: 100px;
+  width: 659px;
+  height: 136px;
+}
+.map {
+  width: 1114.39px;
+  height: 1126px;
+  position: relative;
+  left: 0px;
+}
+.centro {
+  width: 498.57px;
+  height: 494.51px;
+  position: absolute;
+  left: 362.76px;
+  top: 210.69px;
+}
+.centro2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.açores {
+  width: 493.93px;
+  height: 439.95px;
+  position: absolute;
+  left: 100.41px;
+  top: -28.44px;
+}
+.açores2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.algarve {
+  width: 509.6px;
+  height: 408.61px;
+  position: absolute;
+  left: 346.51px;
+  top: 756.86px;
+}
+.algarve2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.madeira {
+  width: 385.97px;
+  height: 515.41px;
+  position: absolute;
+  left: 129.43px;
+  top: 648.9px;
+}
+.madeira2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.alentejo {
+  width: 473.62px;
+  height: 499.74px;
+  position: absolute;
+  left: 396.42px;
+  top: 476.52px;
+}
+.alentejo2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.lisboa {
+  width: 488.13px;
+  height: 432.99px;
+  position: absolute;
+  left: 156.71px;
+  top: 473.62px;
+}
+.lisboa2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.norte {
+  width: 505.54px;
+  height: 481.16px;
+  position: absolute;
+  left: 438.21px;
+  top: -60.94px;
+}
+.norte2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+
+.centro:hover {
+    transform: scale(1.1);
+}
+
+.açores:hover {
+    transform: scale(1.1);
+}
+
+.algarve:hover {
+    transform: scale(1.1);
+}
+
+.madeira:hover {
+    transform: scale(1.1);
+}
+
+.alentejo:hover {
+    transform: scale(1.1);
+}
+
+.lisboa:hover {
+    transform: scale(1.1);
+}
+
+.norte:hover {
+    transform: scale(1.1);
+}
+
+/* Botões das regiões */
+.region {
+    background: none; /* Remove o fundo padrão dos botões */
+    border: none; /* Remove a borda dos botões */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove o margin */
+    cursor: pointer; /* Mostra o cursor de clique */
+    position: absolute; /* Garante que eles sigam as posições do mapa */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover: Ampliação e sombra */
+.region:hover {
+    transform: scale(1.1); /* Amplia a imagem em 10% */
+}
+
+/* Estilização para imagens dentro dos botões */
+.region img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem se ajuste */
+    display: block; /* Remove espaços indesejados */
+}
+
+/* Top6 */
+
+.top-6-title {
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+/* Container para os divs "top-123" e "top-456" */
+.top-container {
+    display: flex;
+    flex-direction: column; /* Organiza os divs verticalmente */
+    gap: 20px; /* Espaçamento entre os divs */
+    width: 90%; /* Define uma largura que se adapta à tela */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.top-123, .top-456 {
+    display: flex; /* Organiza as caixas dentro dos divs horizontalmente */
+    flex-wrap: nowrap; /* Impede quebra de linha */
+    gap: 10px; /* Espaço entre as caixas */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow-x: auto; /* Permite rolagem horizontal caso necessário */
+}
+
+/* Estilo para as caixas */
+.first, .second, .third, .fourth, .fifth, .sixth {
+    width: 600px;
+    height: 450px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.highlighted-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.first img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.first h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.second img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.second h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.third img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.third h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.fourth img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.fourth h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.fifth img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.fifth h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.sixth img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.sixth h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Teste vocacional */
+.vocacional {
+    text-align: center;
+    margin: 60px;
+}
+
+.test-btn {
+    color: white;
+    background-color: rgb(1, 180, 1);
+    height: 60px;
+    width: 400px;
+    margin: 20px;
+    border:0;
+    border-radius: 10px;
+}
+
+.test-btn:hover {
+    background-color: green;
+}
+
+/* Footer */
+#footer {
+    background-color: #000675;
+    color: white;
+    padding: 20px;
+}
+
+/* University page */
+
+.uni-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; /* Adiciona um espaçamento entre as linhas */
+    border-radius: 10px;
+}
+
+.uni-box img {
+    margin-right: 15px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.uni-box h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.uni-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 400px;
+    margin-top: 300px;
+    margin-bottom: 40px;
+}
+
+/* Universities pages */
+
+.universities-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 150px;
+}
+
+.university-title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+/* About us */
+
+.aboutcontainer {
+    margin-top: 100px;
+    margin-inline: 450px;
+    margin-bottom: 200px;
+}
+
+.about-title {
+    font-size: 3rem;
+    margin-bottom: 70px;
+}
+
+.about-text {
+    font-size: 1.5rem;
+}
+
+.courses-list {
+    margin-left: 25%;
+}
+
+.uni-paragraphs {
+    font-size: 1.5rem;
+}
+

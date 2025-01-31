@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Font */
+.do-hyeon-regular {
+    font-family: "Do Hyeon", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header esteja acima de outros elementos */
+}
+.logo {
+    height: 20%;
+    position: fixed;
+    left: 45%;
+    top: 15px;
+}
+
+.navbar {
+    background-color: #000675;
+    padding: 1rem;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    padding-top: 20px;
+}
+.navbar-brand {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-family: "Do Hyeon", serif;
+}
+
+.navbar-brand:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-items {
+    display: flex;
+    background-color: #000D40;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9rem;
+    padding: 1rem;
+}
+.nav-item {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.nav-item:hover {
+    background-color: #000675;
+    border-radius: 5px;
+}
+.nav-item a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar input[type="search"] {
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 50px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.result-item {
+    display: none; /* Ocultamos os itens por padrão */
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.result-item.visible {
+    display: block; /* Exibimos quando o item corresponde à busca */
+}
+
+.title {
+    margin-top: 250px;
+    margin-bottom: 50px;
+    font-size: 2.7rem;
+    color: #000675;
+    font-weight:bolder;
+}
+
+.container {
+    width: 80%;
+    margin-top: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #000D4F;
+}
+
+.question h3 {
+    color: #000D40;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+} 
+
+/* Container da pergunta */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Container das opções */
+.options {
+    display: flex; /* Exibe opções em linha */
+    flex-wrap: wrap; /* Permite quebra de linha, se necessário */
+    gap: 15px; /* Espaçamento entre caixas */
+    color: #000D40;
+    margin-bottom: 90px;
+}
+
+/* Ocultar o input radio */
+input[type="radio"] {
+    display: none; /* O input não será visível */
+}
+
+/* Estilo padrão das caixas */
+.option-box {
+    flex: 1; /* As caixas têm tamanhos iguais */
+    min-width: 200px;
+    font-size: 1.5rem; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #3DFFB3; /* Cor de fundo padrão */
+    cursor: pointer; /* Cursor de clique */
+    transition: all 0.3s ease; /* Suavizar interações */
+}
+
+/* Efeito ao passar o mouse */
+.option-box:hover {
+    background-color: #37E6A0; /* Cor de fundo ao passar o mouse */
+}
+
+/* Alterar estilo quando a opção é selecionada */
+input[type="radio"]:checked + .option-box {
+    background-color: #37E6A0; /* Cor de fundo destacada */
+    font-weight: bold; /* Texto em negrito */
+    color: #000D40; /* Cor do texto */
+}
+
+
+button {
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: #000675;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+button:hover {
+    color: white;
+    background-color: #000D4F;
+    transition: all 0.3s;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f5e9;
+    border: 1px solid #5EF05F;
+    border-radius: 5px;
+}
+.error {
+    color: red;
+    margin-top: 10px;
+}
+.universities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.university {
+    color: white;
+    background: #3373c4;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.university:hover {
+    background: #1f63bc;
+}
+.university a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.university-list .university:first-child {
+    background-color: #003396;  /* Exemplo de cor de fundo diferente para a primeira universidade */
+    font-weight: bold;          /* Exemplo de deixar o texto mais forte */
+    padding: 50px;
+}
+.university-list .university:first-child:hover{
+    background-color: #002c84;
+}
+
+/* Footer */
+#footer {
+    background-color: #000675;
+    color: white;
+    padding: 20px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Definindo a escala para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição do site para motores de busca -->
+    <meta name="description" content="Receitas de Culinária">
+    <!-- Palavras-chave -->
+    <meta name="keywords" content="Receitas">
+    <!-- Autor do site -->
+    <meta name="author" content="Miguel Machado">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="Project1.css">
+    <!-- Título da página -->
+    <title>Receitas de Culinária</title>
+</head>
+<body>
+    <!-- Tela de carregamento enquanto o conteúdo carrega -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-text">A carregar...</div>
+            <div class="spinner"></div> <!-- Animação de carregamento -->
+        </div>
+    </div>
+
+    <!-- Cabeçalho da página -->
+    <header class="header">
+        <h1 class="header-title">Receitas de Culinária</h1>
+    </header>
+
+    <!-- Secção de navegação -->
+    <section>
+        <nav class="navegar">
+            <!-- Lista de navegação -->
+            <ul class="main-list">
+                <!-- Item de navegação para ir para a página inicial -->
+                <li class="item-list">
+                    <a href="index.html" class="home_link">Home</a>
+                </li>
+                <!-- Item de navegação para a receita de Bolo de Iogurte com ícone SVG -->
+                <li class="item-list">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.98985 7.01056L3.15002 12.8491L3.93121 13.65L10.5918 7.01056L3.93121 0.350024L3.15002 1.14966L8.98985 7.01056Z" fill="black"></path>
+                    </svg>
+                    <span>Bolo de iogurte</span>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Secção de imagem com a receita de Bolo de Iogurte -->
+    <section class="image-section">
+        <div class="image-container">
+            <!-- Imagem principal da receita de Bolo de Iogurte -->
+            <img src="https://www.pingodoce.pt/wp-content/uploads/2016/03/bolo-de-iogurte.jpeg" alt="Receita" class="top-image">
+        </div>
+    </section>
+
+    <!-- Secção de detalhes da receita -->
+    <section class="recipe-detail_section">
+        <div class="recipe-detail_instructions">
+            <!-- Secção de ingredientes da receita -->
+            <div class="recipe-ingredients">
+                <h3 class="recipe-ingredients_title">Ingredientes</h3>
+                <ul class="recipe-ingredients_list">
+                    <!-- Lista de ingredientes para a receita de Bolo de Iogurte -->
+                    <li class="recipe-ingredients_items">Manteiga (para untar) - 1 q.b.</li>
+                    <li class="recipe-ingredients_items">Iogurte natural - 1 unid.</li>
+                    <li class="recipe-ingredients_items">Ovo M - 4 unid.</li>
+                    <li class="recipe-ingredients_items">Açúcar - 3 copos</li>
+                    <li class="recipe-ingredients_items">Óleo - ¼ copo</li>
+                    <li class="recipe-ingredients_items">Fermento em pó - 2 c. de chá</li>
+                    <li class="recipe-ingredients_items">Farinha - 2 copos</li>
+                    <li class="recipe-ingredients_items">Açúcar em pó - 2 c. de sopa</li>
+                </ul>
+            </div>
+
+            <!-- Secção de passos de preparação da receita -->
+            <div class="recipe-steps">
+                <h3 class="recipe-steps_title">Preparação</h3>
+                <ul class="recipe-steps_list">
+                    <!-- Passos detalhados para preparar o Bolo de Iogurte -->
+                    <li class="recipe-steps-items">1. Pre-aqueça o forno a 180 ºC.</li>
+                    <li class="recipe-steps-items">2. Unte uma forma de chaminé com manteiga e reserve.</li>
+                    <li class="recipe-steps-items">3. Numa taça, junte o iogurte e os ovos. Utilize a medida do copo de iogurte e adicione o açúcar, o óleo, a farinha e o fermento.</li>
+                    <li class="recipe-steps-items">4. Bata com uma batedeira até a massa estar homogénea.</li>
+                    <li class="recipe-steps-items">5. Deite a massa na forma de chaminé, previamente untada, e leve ao forno durante 40 a 45 minutos, ou espete um palito na massa e verifique se sai limpo.</li>
+                    <li class="recipe-steps-items">7. Retire do forno e deixe arrefecer ligeiramente antes de desenformar.</li>
+                    <li class="recipe-steps-items">8. Antes de servir, polvilhe com o açúcar em pó.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <!-- Texto do rodapé -->
+        <p>&copy; Receitas de Culinária - Projecto 1 de TWEB 2024</p>
+    </footer>
+    
+</body>
+</html>

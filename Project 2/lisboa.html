@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Região Metropolitana de Lisboa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Road+Rage&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Campus Compass</a>
+                <form class="d-flex ms-auto" role="search">
+                    <input id="searchBar" class="form-control me-2" type="search" placeholder="Buscar no site" aria-label="Search">
+                    <button class="btn btn-outline-light" type="button" id="searchBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search-circle" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.398 1.398h-.001c.03.04.063.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1.007 1.007 0 0 0-.114-.098zM6.5 10a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </nav>
+        
+        <div class="nav-items" id="navbarMenu">
+            <div class="nav-item"><a href="/about.html">SOBRE NÓS</a></div>
+            <div class="nav-item"><a href="/universities.html">UNIVERSIDADES</a></div>
+            <div></div>
+            <div></div>
+            <div class="nav-item"><a href="/ranking.html">RANKING</a></div>
+            <div class="nav-item"><a href="/vocacional.html">TESTE VOCACIONAL</a></div>
+        </div>
+
+        <img src="images/LogoCompass.png" alt="Logo" class="logo">
+    </header>
+
+    <img class="universities-img" src="https://images.turismoenportugal.org/Ponte-25-de-Abril-Lisboa.jpg" alt="Universidades de Lisboa">
+
+    <main class="container my-5">
+        <section id="sobre" class="mb-5">
+            <h1 class="university-title mb-3">Universidades da Região Metropolitana de Lisboa</h1>
+            <p class="uni-paragraphs">A região metropolitana de Lisboa abriga algumas das instituições de ensino superior mais renomadas de Portugal, como a Universidade de Lisboa, a Universidade Nova de Lisboa e o Instituto Politécnico de Lisboa. Estas universidades são reconhecidas internacionalmente pela qualidade do ensino, inovação e oportunidades de pesquisa.</p>
+        </section>
+
+        <section id="cursos" class="mb-5">
+            <h2 class="university-title mb-3">Cursos Oferecidos</h2>
+            <ul class="courses-list">
+                <li class="uni-paragraphs"><strong>Engenharia:</strong> Engenharia Informática, Engenharia Civil, Engenharia Eletrotécnica.</li>
+                <li class="uni-paragraphs"><strong>Ciências:</strong> Biotecnologia, Ciências da Computação, Física, Química.</li>
+                <li class="uni-paragraphs"><strong>Humanidades:</strong> Psicologia, Comunicação Social, Direito.</li>
+                <li class="uni-paragraphs"><strong>Saúde:</strong> Medicina, Enfermagem, Ciências Biomédicas.</li>
+            </ul>
+        </section>
+
+        <section id="candidaturas" class="mb-5">
+            <h2 class="university-title mb-3">Candidaturas</h2>
+            <p class="uni-paragraphs">O acesso às universidades da região de Lisboa se dá através do concurso nacional de acesso ao ensino superior. Também há programas específicos para estudantes internacionais e diversas bolsas de estudo disponíveis.</p>
+        </section>
+
+        <section id="contato">
+            <h2 class="university-title mb-3">Contato</h2>
+            <p class="uni-paragraphs">Para mais informações, visite os sites oficiais das principais universidades:<br>
+                <a href="https://www.ulisboa.pt/" target="_blank">Universidade de Lisboa</a> | 
+                <a href="https://www.unl.pt/" target="_blank">Universidade Nova de Lisboa</a> | 
+                <a href="https://www.ipl.pt/" target="_blank">Instituto Politécnico de Lisboa</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 mt-5" id="footer">
+        <p>&copy; 2025 Campus Compass. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

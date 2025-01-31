@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Definindo a escala para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição do site para motores de busca -->
+    <meta name="description" content="Receitas de Culinária">
+    <!-- Palavras-chave para SEO -->
+    <meta name="keywords" content="Receitas">
+    <!-- Autor do site -->
+    <meta name="author" content="Miguel Machado">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="Project1.css">
+    <!-- Para a setinha da dropdown-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Título da página -->
+    <title>Receitas de Culinária</title>
+</head>
+<body>
+
+    <!-- Tela de carregamento enquanto o conteúdo carrega -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-text">A carregar...</div>
+            <div class="spinner"></div> <!-- Animação de carregamento -->
+        </div>
+    </div>
+    
+    <!-- Cabeçalho da página -->
+    <header class="header">
+        <h1 class="header-title">Receitas de Culinária</h1>
+        <div class="search-bar">
+            <!-- Formulário de pesquisa para selecionar a receita -->
+            <form action="" method="get">
+                <!-- Dropdown estilizado -->
+                <div class="dropdown">
+                    <button class="dropbtn" disabled selected >Escolha uma receita...
+                        <i class="fa fa-caret-down"></i> <!-- Setinha para baixo -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="receita1.html">Lasanha</a>
+                        <a href="receita2.html">Bolo de iogurte</a>
+                        <a href="receita3.html">Bacalhau com natas</a>
+                        <a href="receita4.html">Pastel de nata caseiro</a>
+                        <a href="receita5.html">Burritos</a>
+                        <a href="receita6.html">Carapau de corrida</a>
+                        <a href="receita7.html">Bolachas de Amendoim</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <!-- Secção de receitas em destaque -->
+    <section class="highlights">
+        <h2>Receitas em Destaque</h2>
+        <br>
+        <div class="recipe-cards">
+            <!-- Card para cada receita em destaque -->
+            <div class="recipe-card">
+                <a href="receita1.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2015/03/lasanha.jpeg" alt="Receita 1"></a>
+                <h3>Lasanha</h3>
+            </div>
+            <div class="recipe-card">
+                <a href="receita2.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2016/03/bolo-de-iogurte.jpeg" alt="Receita 3"></a>
+                <h3>Bolo de iogurte</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Secção de lista com algumas receitas -->
+    <section class="recipe-list">
+        <h2>Algumas Receitas</h2>
+        <br>
+        <div class="recipe-grid">
+            <!-- Cada receita é apresentada em um item da lista -->
+            <div class="recipe-item">
+                <a href="receita3.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2015/09/bacalhau-com-natas.jpeg" alt="Bacalhau com natas"></a>
+                <div class="recipe-info">
+                    <h3>Bacalhau com natas</h3>
+                    <hr>
+                    <p>O bacalhau com natas é uma receita clássica da culinária portuguesa e é uma das mais adoradas formas de servir bacalhau.</p>
+                </div>
+            </div>
+            <div class="recipe-item">
+                <a href="receita4.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2017/04/pastel-de-nata-caseiro.jpg" alt="Pastel de nata caseiro"></a>
+                <div class="recipe-info">
+                    <h3>Pastel de nata caseiro</h3>
+                    <hr>
+                    <p>Conseguir fazer um bom pastel de nata caseiro é um desafio para quem gosta de se aventurar na cozinha. Esta receita é fácil e muito rápida.</p>
+                </div>
+            </div>
+            <div class="recipe-item">
+                <a href="receita5.html" target="_self"><img src="https://sire-media-foxpt.fichub.com/24k_pt/recipe-image/698786.640x360.webp" alt="Burritos"></a>
+                <div class="recipe-info">
+                    <h3>Burritos</h3>
+                    <hr>
+                    <p>Este burrito caseiro é preparado com tortilhas frescas e macias, recheadas com uma combinação saborosa de abacate cremoso, frango desfiado, feijão e arroz. O tempero de cebola, tomate e coentros, com um toque de crème fraîche, acrescenta frescura e equilíbrio. Ideal para uma refeição prática e cheia de sabor!</p>
+                </div>
+            </div>
+            <div class="recipe-item">
+                <a href="receita6.html" target="_self"><img src="https://sire-media-foxpt.fichub.com/24k_pt/recipe-image/698794.640x360.webp" alt="Carapau de corrida"></a>
+                <div class="recipe-info">
+                    <h3>Carapau de corrida</h3>
+                    <hr>
+                    <p>Esta receita de salada de carapau combina sabores frescos e texturas variadas. O carapau é primeiro marinado e grelhado, depois desfiado e misturado com batatinhas novas, cebola roxa e aipo, temperado com um molho leve feito com o próprio caldo do peixe. É uma opção fresca e saborosa, perfeita para dias quentes.</p>
+                </div>
+            </div>
+            <div class="recipe-item">
+                <a href="receita7.html" target="_self"><img src="https://sire-media-foxpt.fichub.com/24k_pt/recipe-image/698788.640x360.webp" alt="Bolachas de Amendoim"></a>
+                <div class="recipe-info">
+                    <h3>Bolachas de Amendoim</h3>
+                    <hr>
+                    <p>As bolachas de amendoim são crocantes e aromáticas, com um sabor rico e levemente salgado. Feitas com amendoins triturados ou manteiga de amendoim, são perfeitas para acompanhar um café ou chá.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <!-- Texto do rodapé -->
+        <p>&copy; Receitas de Culinária - Projecto 1 de TWEB 2024</p>
+    </footer>
+</body>
+</html>
